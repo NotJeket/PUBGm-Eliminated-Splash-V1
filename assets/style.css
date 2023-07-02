@@ -1,0 +1,92 @@
+.splash-screen-container {
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    height: 200px ;
+}
+
+.team-logo-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    height: 220px;
+    width: 200px;
+}
+
+.splash-screen {
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 220px;
+}
+
+.fade-in {
+    animation-name: fade-in;
+}
+
+.fade-out {
+    animation-name: fade-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.team-logo {
+    color: white;
+    font-family: Bebas Neue;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    padding-top: 35px;
+}
+
+.team-info {
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.team-name {
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.team-rank {
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.team-kills {
+    color: white;
+    font-family: Bebas Neue;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    font-weight: bold;
+}
